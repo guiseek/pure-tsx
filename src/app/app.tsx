@@ -1,14 +1,13 @@
 import { useState } from "@core";
 
 export const App = () => {
-  const title = 'Título'
+  const title = "Título";
 
-  const [setValue, prop, value] = useState(0)
+  const [setValue, prop, value] = useState(0);
 
   setInterval(() => {
-    setValue(value() + 1)
-  }, 1000)
-  
+    setValue(value() + 1);
+  }, 1000);
 
   return (
     <main>
