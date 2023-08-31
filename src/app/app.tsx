@@ -1,4 +1,6 @@
 import { useState } from "@core";
+import { Counter } from "./counter";
+import { Clock } from "./clock";
 
 export const App = () => {
   const title = "Título";
@@ -13,7 +15,11 @@ export const App = () => {
     <main>
       <h1>{title}</h1>
 
-      <h2>{prop}</h2>
+      <Clock />
+
+      <h3>{prop}</h3>
+
+      <Counter initialValue={0} />
     </main>
   );
 };
